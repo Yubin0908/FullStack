@@ -1,0 +1,16 @@
+scanner : 사용자로부터 값을 전달받는 매개체
+
+1. 조건문
+ - if
+   if ([조건]) { script }
+ - switch
+  switch(매개변수) { 
+    case 값1 :
+      명령;
+    case 값2 :
+      명령;
+    case 값3 :
+      명령;
+    default :
+      명령;
+  }
