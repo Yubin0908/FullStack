@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IfQuiz04 {
+public class IfQuiz04Refactoring {
 	
 	public static void main(String[] args) {
 		
@@ -24,37 +24,29 @@ public class IfQuiz04 {
 		System.out.print("점수를 입력하세요... ");
 		
 		int num = scan.nextInt();
-		String grade = "";
+		char grade, type = ' ';
 		
 		if ( num >= 90 ) {
-			if ( num >= 97 ) {
-				grade = "A+";
-			} else if ( num >= 94 ) {
-				grade = "A0";
-			} else {
-				grade = "A-";
-			}
+			grade = 'A';
 		} else if ( num >= 80 ) {
-			if ( num >= 87 ) {
-				grade = "B+";
-			} else if ( num >= 84 ) {
-				grade = "B0";
-			} else {
-				grade = "B-";
-			}
+			grade = 'B';
 		} else if ( num >= 70 ) {
-			if ( num >= 77 ) {
-				grade = "C+";
-			} else if ( num >= 74 ) {
-				grade = "C0";
-			} else {
-				grade = "C-";
-			}
+			grade = 'C';
 		} else {
-			grade = "F";
+			grade = 'F';
+		}
+		
+		if ( num >= 70 ) {
+			if ( ( num % 10 ) >= 7 || num == 100 ) {
+				type = '+';
+			} else if ( ( num % 10 ) >= 4 ) {
+				type = '0';
+			} else {
+				type = '-';
+			}
 		}
 			
-		System.out.printf("학점은 %s 입니다.", grade);
+		System.out.printf("학점은 %c%c 입니다.", grade, type);
 		
 		scan.close();
 	}

@@ -24,7 +24,7 @@ public class IfQuiz03 {
 		
 		if ( num1 > num2 ) {
 			System.out.printf("큰 값 : %d, 작은 값 : %d ", num1, num2);
-		} else {
+		} else if ( num1 < num2 ) {
 			System.out.printf("큰 값 : %d, 작은 값 : %d ", num2, num1);
 		}
 		

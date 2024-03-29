@@ -17,7 +17,15 @@ public class ScanQuiz02 {
 		
 		int num1 = scan.nextInt();
 		int num2 = scan.nextInt();
-		int max = (num1 > num2) ? num1:num2;
+		// [ 방법 2 ] 삼항연산자 사용
+		// int max = (num1 > num2) ? num1:num2;
+		int max;
+		// [ 방법 1 ] IF문 사용
+		if ( num1 > num2 ) {
+			max = num1;
+		} else {
+			max = num2;
+		}
 		
 		System.out.printf("큰 값 >> " + max);
 		

@@ -8,7 +8,7 @@ public class SwitchQuiz02 {
 		 * if -> switch 문으로 변경
 		 */
 		
-		int  num = 25;
+		int  num = 23;
 		
 //		if ( num >= 0 && num < 10 ) {
 //			System.out.println("0이상 10미만의 수");
@@ -20,14 +20,14 @@ public class SwitchQuiz02 {
 //			System.out.println("30이상의 수");
 //		}
 		
-		switch ( num % 100 ) {
-			case 1, 2, 3, 4, 5, 6, 7, 8, 9 :
+		switch ( num / 10 ) {
+			case 0 :
 				System.out.println("0이상 10미만의 수");
 				break;
-			case 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 :
+			case 1 :
 				System.out.println("10이상 20미만의 수");
 				break;
-			case 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 :
+			case 2 :
 				System.out.println("20이상 30미만의 수");
 				break;
 			default :
