@@ -22,10 +22,11 @@ public class SwitchQuiz03 {
 		int firstNum = scan.nextInt();
 		int secondNum = scan.nextInt();
 		
-		scan.nextLine();
+		// scan.nextLine();
 		
 		System.out.print("사칙연산(+, -, *, /) 중 하나를 입력하세요... ");
-		String operation = scan.nextLine();
+		// String operation = scan.nextLine();
+		String operation = scan.next();
 		
 		switch ( operation ) {
 			case "+" :

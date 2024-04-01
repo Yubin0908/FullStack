@@ -37,7 +37,10 @@ public class SwitchQuiz01Refactoring {
 				System.out.println("월을 잘못 입력하셧습니다. 잘못입력한 월 : " + month);
 		}
 		
-		System.out.printf("계절은 %s입니다.", season);
+		if ( month >= 1 && month <= 12 ) {
+        	System.out.println("계절은 " + season + "입니다.");
+        }
+		// System.out.printf("계절은 %s입니다.", season);
 		
 		scan.close();
 	}
