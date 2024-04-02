@@ -13,11 +13,11 @@ public class NestedLoopQuiz02 {
 		 * 
 		 * 3 * 1 = 3
 		 */
-		int i = 2;
+		int i = 2, j = 1;
 		
 		while ( i < 10 ) {
 			
-			int j = 1;
+			j = 1;
 			
 			while ( j < 10 ) {
 				

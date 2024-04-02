@@ -22,10 +22,14 @@ public class WhileQuiz05 {
 		// 사용자 입력 변수
 		int user = 0;
 		
-		while ( user != -1 ) {
-			sum += user;
+		while ( true ) {
 			System.out.print("정수를 입력하세요(종료 -1 입력)");
 			user = scan.nextInt();
+			
+			if ( user == -1 )
+				break;
+			
+			sum += user;
 		}
 
 		System.out.printf("총 합 >> %d", sum);

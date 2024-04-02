@@ -16,8 +16,8 @@ public class WhileQuiz03 {
 			sum += number;
 		}
 		
-		System.out.printf("1 ~ 10 누적합 : %d", sum);
-		
+		System.out.printf("1 ~ 10 누적합 : %d\n", sum);
+		System.out.println("반복문 실행 후 number : " + number);
 	}
 
 }

@@ -18,12 +18,15 @@ public class WhileQuiz04 {
 		int user = scan.nextInt();
 		
 		int computer = 0;
+		int cnt = 0;
 		
 		while ( user != computer ) {
+			cnt++;
 			computer = (int)(Math.random() * 10) + 1;
 			System.out.print(computer + " ");
 		}
 		
+		System.out.printf("\n%d회 실행해서 찾았다!", cnt);
 		scan.close();
 	}
 	

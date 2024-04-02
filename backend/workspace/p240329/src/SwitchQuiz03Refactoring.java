@@ -35,10 +35,10 @@ public class SwitchQuiz03Refactoring {
                 break;
             default : 
             	System.out.println("잘못된 연산자를 입력하셨군요!!");
-            	operator = null;
+            	operator = " ";
         }
         // 반복되는 출력문구
-        if ( operator != null ) {
+        if ( operator != " " ) {
         	// System.out.println(valueOne + " " + operator + " " + valueTwo + " = " + result);
         	System.out.printf("%d %s %d = %d", valueOne, operator, valueTwo, result);
         }
