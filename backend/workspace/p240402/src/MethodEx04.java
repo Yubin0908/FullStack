@@ -3,7 +3,7 @@ public class MethodEx04 {
 	public static void main(String[] args) {
 		String str = returnString();
 		
-		System.out.println("returnString() 호출 결과 >> " + returnString());
+		System.out.println("returnString() 호출 결과 >> " + str);
 		
 		System.out.println(returnString());
 	}

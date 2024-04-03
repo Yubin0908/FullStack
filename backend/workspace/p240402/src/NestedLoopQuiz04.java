@@ -21,24 +21,16 @@ public class NestedLoopQuiz04 {
 		
 		int user = scan.nextInt();
 		
-		if ( user == 0 ) { // 사용자가 0 입력, 짝수 단 출력
-			for ( int i = 2 ; i < 10; i += 2 ) {
-				for( int j = 1; j < 10; j++ ) {
-					System.out.printf("%d * %d = %d\n", i, j , (i * j) );
-				}
-				System.out.println();
+		int choice = (user == 0) ? 2:3;
+
+		for ( int i = choice ; i < 10; i += 2 ) {
+			for( int j = 1; j < 10; j++ ) {
+				System.out.printf("%d * %d = %d\n", i, j, (i * j) );
 			}
-		} else if ( user == 1 ) { // 사용자가 1 입력, 홀수 단 출력
-			for ( int i = 3 ; i < 10; i += 2 ) {
-				for( int j = 1; j < 10; j++ ) {
-					System.out.printf("%d * %d = %d\n", i, j , (i * j) );
-				}
-				System.out.println();
-			}
-		} 
+			System.out.println();
+		}
 		
 		scan.close();
-		
 	}
 
 }
