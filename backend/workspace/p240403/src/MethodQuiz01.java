@@ -1,4 +1,3 @@
-import java.util.Scanner;
 // 문제
 public class MethodQuiz01 {
 	// method 정의
@@ -13,16 +12,33 @@ public class MethodQuiz01 {
 		for(int i = min; i <= max; i++) {
 			sum += i;
 		}
+		
 		System.out.printf("%d ~ %d의 누적합 >> %d\n", num1, num2, sum);
 	}
 	
+	// [풀이]
+//	public static void add_A(int n1, int n2) {
+//		int sum = 0;
+//		int max = 0, min = 0;
+//		
+//		if (n1 > n2) {
+//			max = n1;
+//			min = n2;
+//		} else {
+//			max = n2;
+//			min = n1;
+//		}
+//		
+//		for(int i = min; i <= max; i++) {
+//			sum += i;
+//		}
+//		
+//		System.out.printf("%d ~ %d의 누적합 >> %d\n", n1, n2, sum);
+//	}
+	
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("정수 2개 입력 >> ");
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
-		// method 호출
-		add(num1, num2);
+		add(2, 5);
+		add(5, 2);
+		// add_A(5,2);
 	}
 }
